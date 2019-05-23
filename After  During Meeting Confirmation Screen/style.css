@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.metScreen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 9.8vw 10.5vw;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.callNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.infoBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 4.6vw;
+}
+
+.navButtons {
+    max-width: 13.7vw;
+}
+
+.clientImg {
+    width: 24vw;
+}
+
+.logo {
+    width: 47vw;
+}
+
+.shadow {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6.4vw;
+}
+
+.summaryBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 3.2vw 5.8vw 9.1vw;
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.summaryBox h3 {
+    color: black;
+    font-size:5vw;
+    margin: 2vw 0 4vw;
+}
+.summaryBox .sumForm label {
+    color: black;
+    font-size: 3.4vw;
+   
+}
+.summaryBox .sumInfo p {
+    color: black;
+    font-size: 21px;
+}
+
+.summaryBox .sumInfo {
+    padding: 20px 25px;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+     margin: 12px 0 4vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sumForm {
+    width: 100%;
+    border-radius: 5px;
+}
+.greenBtn
+{
+    width: 100%;
+    height: 9.8vw;
+    border-radius: 5px;
+    background-color: #00a549;
+    color: white;
+    font-size: 3.4vw;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.6vw;
+}
+.scrool
+{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+}
+.close
+{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 2.61vw;
+}
+.close img
+{
+    cursor: pointer;
+}

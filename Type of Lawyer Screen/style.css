@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.mobileBox {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 9.1vw 6vw;
+    /*    align-items: center;*/
+    justify-content: center;
+    text-align: center;
+}
+
+.mobileBox h3 {
+    font-size: 5vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin: 0 0 4vw;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bg1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5vw 0;
+}
+
+header .logo {
+    width: 53vw;
+}
+
+header .arrow {
+    position: absolute;
+    cursor: pointer;
+    left: 5.3vw;
+    width: 3.4vw;
+    height: 6vw;
+}
+
+.labelCheck {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0px 0 0 27px;
+    cursor: pointer;
+    font-size: 25px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.labelCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4vw;
+    width: 4vw;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid #f0f0f0;
+    margin: 2px 0 0;
+}
+
+.labelCheck input:checked ~ .checkmark:after {
+    display: block;
+}
+.labelCheck input:checked ~ .img {
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    opacity: 1;
+}
+
+.labelCheck .checkmark:after {
+    left: 9px;
+    top: -1px;
+    width: 7px;
+    height: 19px;
+    border: solid white;
+    border-width: 0px 3px 3px 0px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.labelCheck input:checked ~ .checkmark {
+    background-color: #1baf55;
+    border: 2px solid #1baf55;
+}
+
+.labelCheck input:checked ~ .checkInfo {
+    color: #1baf55;
+}
+
+.checkForm {
+    display: flex;
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    height: 12.2vw;
+    padding: 2vw 4vw;
+    margin: 4vw 0;
+}
+
+.labelCheck input:checked ~ .checkForm {
+    border: 1px solid #bfe8d1;
+}
+
+.checkInfo {
+    font-size: 3.5vw;
+    color: rgba(0, 0, 0, .75);
+    margin-left: 2.61vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.checkInfo span {
+    font-size: 2.61vw;
+}
+
+.textAr {
+    width: 100%;
+    height: 37vw;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    padding: 2vw;
+    font-size: 3.5vw;
+}
+
+.areaNotes {
+    font-size: 3.5vw;
+    color: rgba(0, 0, 0, .75);
+    text-align: left;
+    margin: 0 0 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.greenBtn {
+    border: none;
+    color: white;
+    background-color: #00a549;
+    font-weight: 400;
+    width: 100%;
+    height: 11.8vw;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 3.4vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 5.9vw;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.5vw;
+    height: 4vw;
+     -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.icon {
+    height: 7.2vw;
+   
+}
+.active
+{
+    border: 1px solid red;
+}
+
