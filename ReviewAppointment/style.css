@@ -103,6 +103,7 @@ header .arrow
 .form .rate img
 {
     cursor: pointer;
+    width: 7vw;
 }
 .form label
 {

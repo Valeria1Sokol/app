@@ -90,6 +90,7 @@ header .arrow {
 .labelCheck input:checked ~ .checkmark:after {
     display: block;
 }
+
 .labelCheck input:checked ~ .img {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
@@ -97,10 +98,10 @@ header .arrow {
 }
 
 .labelCheck .checkmark:after {
-    left: 9px;
-    top: -1px;
-    width: 7px;
-    height: 19px;
+    left: 1.1vw;
+    top: -0.15vw;
+    width: 1vw;
+    height: 2.5vw;
     border: solid white;
     border-width: 0px 3px 3px 0px;
     -webkit-transform: rotate(45deg);
@@ -191,17 +192,38 @@ header .arrow {
     align-items: center;
     width: 8.5vw;
     height: 4vw;
-     -webkit-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     opacity: 0.5;
 }
 
 .icon {
     height: 7.2vw;
-   
 }
-.active
-{
+
+.active {
     border: 1px solid red;
 }
 
+@media all and (max-width:425px) {
+    .labelCheck .checkmark:after {
+        left: 0.8vw;
+        top: -0.3vw;
+        width: 1vw;
+        height: 2.2vw;
+        border: solid white;
+        border-width: 0px 2px 2px 0px;
+    }
+}
+
+@media all and (max-width:375px) {
+    .labelCheck .checkmark:after {
+        
+            width: 0.9vw;
+    }
+}
+@media all and (max-width:320px) {
+    .labelCheck .checkmark:after {
+        left: 0.5vw;
+    }
+}
